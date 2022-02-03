@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Roll With it</title>
+  <!-- NOTE bootstrap css link -->
+  <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css' rel='stylesheet'
+    integrity='sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC' crossorigin='anonymous'>
+  <!-- NOTE mdi icon link -->
+  <link rel="stylesheet" href="//cdn.materialdesignicons.com/5.4.55/css/materialdesignicons.min.css">
+  <!-- NOTE google font, font link (unique for each font, don't copy mine) -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Gloria+Hallelujah&family=Marck+Script&family=Pacifico&family=Permanent+Marker&family=Ubuntu+Mono:wght@400;700&family=Yellowtail&display=swap"
+    rel="stylesheet">
+  <!-- NOTE my style sheet -->
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    body.debug .container,
+    body.debug .container-fluid {
+      outline: 2px double blue;
+      outline-offset: -2px;
+    }
+
+    body.debug .row {
+      /* padding: 2em; NOTE done with this rule new that we finished the architecture */
+      outline: 2px dashed red;
+      outline-offset: -2px;
+    }
+
+    body.debug [class*="col-"] {
+      min-height: 1vh;
+      outline: 2px dotted forestgreen;
+      outline-offset: -3px;
+    }
+  </style>
+</head>
+
+<body class="debug bg-cake">
+  <header class="container-fluid bg-ocean">
+    <div class="row p-3">
+      <div class="col-5">
+        <!-- NOTE Icon from mdi (don't forget the mdi link in the head) -->
+        <h2> <i class="mdi mdi-muffin"></i> Roll With it</h2>
+      </div>
+    </div>
+  </header>
+  <main class="container-fluid ">
+    <!-- mast head -->
+    <div class="row bg-image align-items-center">
+      <div class="col-5 d-none d-md-block p-5 h-75">
+        <div class="bg-light-ocean p-3">
+          <h4>Who doesn't Love Cake ans Sushi</h4>
+          <p class="font-regular">Caramels jelly croissant sweet powder jujubes sugar plum. Soufflé dessert bonbon
+            shortbread dessert cake.
+            Sugar plum macaroon macaroon apple pie sugar plum cupcake gingerbread cake. Soufflé carrot cake soufflé
+            cheesecake tootsie roll gummies pie soufflé donut.</p>
+        </div>
+      </div>
+    </div>
+    <!-- shop now -->
+    <div class="row justify-content-center text-center bg-wasabi p-1">
+      <div class="col-3">shop now</div>
+    </div>
+    <!-- product area -->
+    <div class="row justify-content-around">
+      <div class="col-12 col-md-4 p-5 p-5">
+        <div class=" text-center">
+          <img class="img-fluid rounded shadow-sm img-square"
+            src="https://s3-alpha-sig.figma.com/img/cc70/68d9/74b6cd59a85c81dfc92032ed018ce76e?Expires=1644796800&Signature=FNNu53CvbL0S75yS1w7swm9llXgaV0vKWJb2P3OmhH7j7OcO2u3F~59mnospczVFPsU0dK-OKeSESLh4AZ5Zd7q7SAWVDi68~q71Et2him~BTsIAOHuiacgsoak8vL6E~04WJpgiTpA~1J3ucA95U9HTXXAXzs9bbE7E5qSjm~R6lKtOl9K2EgA9IQ~zWEMu3X3ee1orgnNSAVSsPH9I73Fw1TWDS4gyKVr3FxjIJVixxN8Dup7V55lW1bUivEgocHOTuPF5sG8gggjKnO-gk1L1AsGyn~yyMHkZa6LxiH092Nkki9eH7S6Ljx3rLG7T1jCmrxJAxmFf~M178ZGKIw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt="" srcset="">
+          <button class="btn btn-info my-btn p-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 p-5 ">
+        <div class=" text-center">
+          <img class="img-fluid rounded shadow-sm img-square"
+            src="https://s3-alpha-sig.figma.com/img/277e/3681/bcb0e687226346154f432f4da2f402cb?Expires=1644796800&Signature=YY70EDujaB-Utg-tIvo-m8CVrwkSBUSYNvpp80ZLSLRi8IfJlaIZs-zsc7on6k1JC-3LHf8qMNtLeBIhiwM5o-HEJXvs046-I9ksJK9avZQAbi9k7GESZYHR-fzz2LqIhJmjQWxyhfddtPe13fqqKl0ZVQ4iq-CAPioBy1ZqWeiDJDjdgICWiiIdJhniscczaDYo75qy-V0wY8ms2WVwG-GkUOh1hZ4X9yMqVDRD5oOej2gSzW8LYXwgW8J3AlhGSQLtYJdIzwQpdDVc23OK3hNEt1sWgSrma8N-U1LVyEjlq8qLi-R1jI0R--vG2gOLaIoI58uWhTsUo-EUauZS3g__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt="" srcset="">
+          <button class="btn btn-info my-btn p-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 p-5 ">
+        <div class=" text-center">
+          <img class="img-fluid rounded shadow-sm img-square"
+            src="https://s3-alpha-sig.figma.com/img/5181/8d64/677cab5dd0c185f925266ab0ff0c26d5?Expires=1644796800&Signature=gse0K7YN7JJ7ijApvyiRRVHPEtWQ6pM-1TSVtUeTPVQNFQFt~88T5oem5PKK74WPcvoBWimBdHu-HQK9KIDkTgkMz69lK42Q020eP3Sy2izpQNm3k9G~x4f8bE5XQraiOtpEN0zFPLE3z8or-2oLcky3YJHo2F7qWc2dUMwtIK2JAyfJdp2~224cuuuxAAncLWZLuKSMw8Z1xB80W2ilVLE-9z5pTMughmbXl-jWpk5vy1vV6eX20ef4Rq25Jj5ylgKn8BzVaIONeWSd~dLoukHnRoJFrl5dK23ter8Ok2VuuJvfBRGOi0ZryGZyA96mK5ahLluzdQ68D38xGjcHHw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt="" srcset="">
+          <button class="btn btn-info my-btn p-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 p-5 ">
+        <div class=" text-center">
+          <img class="img-fluid rounded shadow-sm img-square"
+            src="https://s3-alpha-sig.figma.com/img/cc70/68d9/74b6cd59a85c81dfc92032ed018ce76e?Expires=1644796800&Signature=FNNu53CvbL0S75yS1w7swm9llXgaV0vKWJb2P3OmhH7j7OcO2u3F~59mnospczVFPsU0dK-OKeSESLh4AZ5Zd7q7SAWVDi68~q71Et2him~BTsIAOHuiacgsoak8vL6E~04WJpgiTpA~1J3ucA95U9HTXXAXzs9bbE7E5qSjm~R6lKtOl9K2EgA9IQ~zWEMu3X3ee1orgnNSAVSsPH9I73Fw1TWDS4gyKVr3FxjIJVixxN8Dup7V55lW1bUivEgocHOTuPF5sG8gggjKnO-gk1L1AsGyn~yyMHkZa6LxiH092Nkki9eH7S6Ljx3rLG7T1jCmrxJAxmFf~M178ZGKIw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt="" srcset="">
+          <button class="btn btn-info my-btn p-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 p-5 ">
+        <div class=" text-center">
+          <img class="img-fluid rounded shadow-sm img-square"
+            src="https://s3-alpha-sig.figma.com/img/cc70/68d9/74b6cd59a85c81dfc92032ed018ce76e?Expires=1644796800&Signature=FNNu53CvbL0S75yS1w7swm9llXgaV0vKWJb2P3OmhH7j7OcO2u3F~59mnospczVFPsU0dK-OKeSESLh4AZ5Zd7q7SAWVDi68~q71Et2him~BTsIAOHuiacgsoak8vL6E~04WJpgiTpA~1J3ucA95U9HTXXAXzs9bbE7E5qSjm~R6lKtOl9K2EgA9IQ~zWEMu3X3ee1orgnNSAVSsPH9I73Fw1TWDS4gyKVr3FxjIJVixxN8Dup7V55lW1bUivEgocHOTuPF5sG8gggjKnO-gk1L1AsGyn~yyMHkZa6LxiH092Nkki9eH7S6Ljx3rLG7T1jCmrxJAxmFf~M178ZGKIw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt="" srcset="">
+          <button class="btn btn-info my-btn p-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 p-5 ">
+        <div class=" text-center">
+          <img class="img-fluid rounded shadow-sm img-square"
+            src="https://s3-alpha-sig.figma.com/img/cc70/68d9/74b6cd59a85c81dfc92032ed018ce76e?Expires=1644796800&Signature=FNNu53CvbL0S75yS1w7swm9llXgaV0vKWJb2P3OmhH7j7OcO2u3F~59mnospczVFPsU0dK-OKeSESLh4AZ5Zd7q7SAWVDi68~q71Et2him~BTsIAOHuiacgsoak8vL6E~04WJpgiTpA~1J3ucA95U9HTXXAXzs9bbE7E5qSjm~R6lKtOl9K2EgA9IQ~zWEMu3X3ee1orgnNSAVSsPH9I73Fw1TWDS4gyKVr3FxjIJVixxN8Dup7V55lW1bUivEgocHOTuPF5sG8gggjKnO-gk1L1AsGyn~yyMHkZa6LxiH092Nkki9eH7S6Ljx3rLG7T1jCmrxJAxmFf~M178ZGKIw__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA"
+            alt="" srcset="">
+          <button class="btn btn-info my-btn p-2 px-3">BUY NOW</button>
+        </div>
+      </div>
+    </div>
+  </main>
+  <footer></footer>
+
+  <!-- NOTE Bootstrap javascript link (not needed for style but some things like drop downs or modals need it) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+    crossorigin="anonymous"></script>
+</body>
+
+</html>

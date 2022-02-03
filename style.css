@@ -1,0 +1,77 @@
+:root{
+  --ocean: #8EECF5;
+  --wasabi:#B9FBC0;
+  --cake-flat: #FBF8CC;
+  --cake-fade: linear-gradient(136.42deg, #F5EF8B 0%, #FFFFFF 130.83%);
+}
+
+body{
+  font-family: 'Marck Script', cursive;
+  font-weight: bold;
+}
+
+.font-regular{
+  font-family: sans-serif;
+  font-weight: 200;
+}
+
+.bg-ocean{
+  background-color: var(--ocean);
+}
+
+.bg-light-ocean{
+  background-color: #8eecf59b ;
+  backdrop-filter: blur(15px);
+  border: 1px solid #a0f8f1bd;
+  border-radius: 5px;
+}
+
+.bg-wasabi{
+  background-color: var(--wasabi);
+}
+.bg-cake{
+  background-color: var(--cake-flat);
+}
+.bg-cake-fade{
+  background: var(--cake-fade);
+}
+
+.bg-image{
+  min-height: 85vh;
+  background-image: url('https://s3-alpha-sig.figma.com/img/4c54/9c8a/57d7ca697b27df2b0d137a6a0928960e?Expires=1644796800&Signature=ANo8vZ7ppSWg5zzE8p~qjlQcBEFZgQZDDvk~SIjXGami8mLC61d6XzVRl0JMyZ3wi-XSWOFkNMT6iU5dpWSSlD97qJO0ptxLWhwk8Yn68B5YqSiC-24kCp8q02ult7jInMkQk1oCkTy8yR5ytB8y3e3hgruBUxE7P20wXNLuZBPpJoxAEdNGqHIgWhAo~ALMRoNd22abp9YOBQRCJ8iJg~R~mhLWEUuvAhToM-k-8nR87hyUZHwy7TQ3Ud8MO9pX2Vl6c6mCB-82UUat2zRBEiP6RMQB7e3lzJOQEVy-6yE3Zd~KOIPMtxA9EFxiYGOFuqtdWXyDQXNcjnLCR7YQJA__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA');
+  background-size: cover;
+  background-position: center;
+}
+
+.img-square{
+  height: 20vw;
+  width: 20vw;
+  object-fit: cover;
+}
+
+/* NOTE change styles based on screen size */
+/* this reads, apply on 768px or smaller */
+@media screen and (max-width: 768px) {
+
+  /* special style applied to anything with class bg-image class */
+  .bg-image {
+   /* border: 12px red solid; */
+   background-image: url('https://s3-alpha-sig.figma.com/img/5771/8d51/b0d1a8d58786aa995f54c24494788094?Expires=1644796800&Signature=L5tbwmJaFEN8deLeMwUsgCpStt24mAVUbeMwZGyXHVuMEjuf9Hzd5ChVg2H8MhaVDiqOiNLbLYBM8oDKF~xDeMAlrSI~z6zBtT70-z00tYZghV8M2o8IjAbnHlcnPKyOSLpX5NczJyDzOhNIoCAc0Kn8p4GhU92V4LN15l3exs9c0St37Xtw5j-Nnuxm31Ie4yKwwQ6WNcV4CVo5Bpx9x3VTapWKAx2sSsDHOewR67-H2QP5WHR-mY3cEoMfpJaXcLu4RmRbCNP1QO3caIF10GyH6fmISyNE3f0YOXFnTCvbvtwkIJhcqSmjHk6btc17CtHkNdC6UGjH3ju~jQfNzg__&Key-Pair-Id=APKAINTVSUGEWH5XD5UA')
+  }
+
+  /* special style applied to anything with class img-square */
+  .img-square{
+    height: 80vw;
+    width: 80vw;
+    /* NOTE  keeps the image from stretching */
+    object-fit: cover;
+  }
+
+}
+
+.my-btn{
+  background-color: var(--ocean);
+  box-shadow: 0px 5px 0px #4a7d91;
+  transform: translateY(-50%);
+}
+
